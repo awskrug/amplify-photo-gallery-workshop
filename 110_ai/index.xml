@@ -17,7 +17,7 @@
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/110_ai/10_rekognition.html</guid>
       <description>직접 태깅하지 않은 이미지도 검색할 수 있으면 좋겠습니다. 다행이 Amazon Rekognition 덕분에 이 기능을 추가하기는 매우 쉽습니다. 사진을 주면 해당 이미지에 적절한 레이블로 응답하는 DetectLabels API를 사용할 수 있습니다. 완벽합니다!
-**Amazon Rekognition의 DetectLabels 간략 정리**  입력한 이미지를 base64 인코딩한 이미지 바이트열이나 Amazon S3 버킷에 이미지 참조로 전달합니다. AWS CLI로 Amazon Rekognition 작업을 호출하는 경우 이미지 바이트열을 전달하는 기능은 지원하지 않습니다. 이미지는 PNG 또는 JPEG 형식의 파일이어야 합니다.  API는 각 개체와 장면과 컨셉에 따라 하나 이상의 레이블을 반환합니다.</description>
+Amazon Rekognition의 DetectLabels 간략 정리  입력한 이미지를 base64 인코딩한 이미지 바이트열이나 Amazon S3 버킷에 이미지 참조로 전달합니다. AWS CLI로 Amazon Rekognition 작업을 호출하는 경우 이미지 바이트열을 전달하는 기능은 지원하지 않습니다. 이미지는 PNG 또는 JPEG 형식의 파일이어야 합니다.  API는 각 개체와 장면과 컨셉에 따라 하나 이상의 레이블을 반환합니다.</description>
     </item>
     
     <item>

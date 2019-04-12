@@ -8,7 +8,7 @@
     <meta property="og:url" content="https://amplify-workshop.go-aws.com" />
     <meta property="og:image" content="https://amplify-workshop.go-aws.com/images/architecture.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0-DEV" />
+    <meta name="generator" content="Hugo 0.53" />
     <meta name="description" content="Amplify / AppSync / React Workshop">
 <meta name="author" content="Gabe Hollombe">
 
@@ -17,24 +17,24 @@
     <title>Deploying our app to S3 :: Amplify / AppSync / React Workshop</title>
 
     
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/nucleus.css?1555044202" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/nucleus.css?1555051411" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/hybrid.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/featherlight.min.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/perfect-scrollbar.min.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/auto-complete.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/theme.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/hugo-theme.css?1555044202" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/hybrid.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/featherlight.min.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/perfect-scrollbar.min.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/auto-complete.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/theme.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/hugo-theme.css?1555051411" rel="stylesheet">
     
-      <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/theme-mine.css?1555044202" rel="stylesheet">
+      <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/theme-mine.css?1555051411" rel="stylesheet">
     
 
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.min.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.structure.min.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.theme.min.css?1555044202" rel="stylesheet">
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery-2.x.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery-ui.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/tabs.js?1555044202"></script>
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.min.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.structure.min.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.theme.min.css?1555051411" rel="stylesheet">
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery-2.x.min.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery-ui.min.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/tabs.js?1555051411"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -44,7 +44,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/amp/120_deploying/10_deploying.html">
+  <body class="" data-url="/120_deploying/10_deploying.html">
     <nav id="sidebar" class="">
 
 
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/lunr.min.js?1555044202"></script>
-<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/auto-complete.js?1555044202"></script>
+<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/lunr.min.js?1555051411"></script>
+<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/auto-complete.js?1555051411"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/search.js?1555044202"></script>
+<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/search.js?1555051411"></script>
 
     
   </div>
@@ -109,8 +109,8 @@
  
   
     
-      <li data-nav-id="/amp/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/1_account.html" title="AWS account 생성하기" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/1_account.html">
+      <li data-nav-id="/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/1_account.html" title="AWS account 생성하기" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/1_account.html">
         AWS account 생성하기
         
         </a>
@@ -128,8 +128,8 @@
  
   
     
-      <li data-nav-id="/amp/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/10_workspace.html" title="Cloud9 Workspace 생성하기" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/10_workspace.html">
+      <li data-nav-id="/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/10_workspace.html" title="Cloud9 Workspace 생성하기" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/10_workspace.html">
         Cloud9 Workspace 생성하기
         
         </a>
@@ -147,8 +147,8 @@
  
   
     
-      <li data-nav-id="/amp/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/20_software.html" title="설치 &amp; 설정" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/20_software.html">
+      <li data-nav-id="/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/20_software.html" title="설치 &amp; 설정" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/20_software.html">
         설치 &amp; 설정
         
         </a>
@@ -198,8 +198,8 @@
  
   
     
-      <li data-nav-id="/amp/20_getting_started/10_what_we_will_build.html" title="무엇을 빌드하나" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/20_getting_started/10_what_we_will_build.html">
+      <li data-nav-id="/20_getting_started/10_what_we_will_build.html" title="무엇을 빌드하나" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/20_getting_started/10_what_we_will_build.html">
         무엇을 빌드하나
         
         </a>
@@ -217,8 +217,8 @@
  
   
     
-      <li data-nav-id="/amp/20_getting_started/20_bootstrapping_the_app.html" title="앱 부트스트래핑" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/20_getting_started/20_bootstrapping_the_app.html">
+      <li data-nav-id="/20_getting_started/20_bootstrapping_the_app.html" title="앱 부트스트래핑" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/20_getting_started/20_bootstrapping_the_app.html">
         앱 부트스트래핑
         
         </a>
@@ -268,8 +268,8 @@
  
   
     
-      <li data-nav-id="/amp/30_adding_auth/10_adding_auth_back.html" title="백엔드 구성하기" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/30_adding_auth/10_adding_auth_back.html">
+      <li data-nav-id="/30_adding_auth/10_adding_auth_back.html" title="백엔드 구성하기" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/30_adding_auth/10_adding_auth_back.html">
         백엔드 구성하기
         
         </a>
@@ -287,8 +287,8 @@
  
   
     
-      <li data-nav-id="/amp/30_adding_auth/20_adding_auth_front.html" title="프론트엔드 렌더링" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/30_adding_auth/20_adding_auth_front.html">
+      <li data-nav-id="/30_adding_auth/20_adding_auth_front.html" title="프론트엔드 렌더링" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/30_adding_auth/20_adding_auth_front.html">
         프론트엔드 렌더링
         
         </a>
@@ -338,8 +338,8 @@
  
   
     
-      <li data-nav-id="/amp/40_graphql/10_setting_up_appsync.html" title="AppSync 세팅" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/40_graphql/10_setting_up_appsync.html">
+      <li data-nav-id="/40_graphql/10_setting_up_appsync.html" title="AppSync 세팅" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/40_graphql/10_setting_up_appsync.html">
         AppSync 세팅
         
         </a>
@@ -357,8 +357,8 @@
  
   
     
-      <li data-nav-id="/amp/40_graphql/20_trying_out_queries.html" title="Querie 수행하기" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/40_graphql/20_trying_out_queries.html">
+      <li data-nav-id="/40_graphql/20_trying_out_queries.html" title="Querie 수행하기" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/40_graphql/20_trying_out_queries.html">
         Querie 수행하기
         
         </a>
@@ -408,8 +408,8 @@
  
   
     
-      <li data-nav-id="/amp/50_working_with_albums/5_managing_albums.html" title="앨범 관리" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/50_working_with_albums/5_managing_albums.html">
+      <li data-nav-id="/50_working_with_albums/5_managing_albums.html" title="앨범 관리" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/50_working_with_albums/5_managing_albums.html">
         앨범 관리
         
         </a>
@@ -459,8 +459,8 @@
  
   
     
-      <li data-nav-id="/amp/60_managing_photos/30_adding_storage.html" title="Adding Cloud Storage" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/60_managing_photos/30_adding_storage.html">
+      <li data-nav-id="/60_managing_photos/30_adding_storage.html" title="Adding Cloud Storage" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/60_managing_photos/30_adding_storage.html">
         Adding Cloud Storage
         
         </a>
@@ -478,8 +478,8 @@
  
   
     
-      <li data-nav-id="/amp/60_managing_photos/40_upload_photos_consolidated.html" title="Managing Photos" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/60_managing_photos/40_upload_photos_consolidated.html">
+      <li data-nav-id="/60_managing_photos/40_upload_photos_consolidated.html" title="Managing Photos" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/60_managing_photos/40_upload_photos_consolidated.html">
         Managing Photos
         
         </a>
@@ -529,8 +529,8 @@
  
   
     
-      <li data-nav-id="/amp/70_generating_thumbnails/10_creating_a_photo_processor_lambda.html" title="사진을 처리하는 람다 함수 만들기" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/70_generating_thumbnails/10_creating_a_photo_processor_lambda.html">
+      <li data-nav-id="/70_generating_thumbnails/10_creating_a_photo_processor_lambda.html" title="사진을 처리하는 람다 함수 만들기" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/70_generating_thumbnails/10_creating_a_photo_processor_lambda.html">
         사진을 처리하는 람다 함수 만들기
         
         </a>
@@ -548,8 +548,8 @@
  
   
     
-      <li data-nav-id="/amp/70_generating_thumbnails/20_connecting_the_lambda_to_the_bucket.html" title="사진 버킷을 처리함수와 연결하기" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/70_generating_thumbnails/20_connecting_the_lambda_to_the_bucket.html">
+      <li data-nav-id="/70_generating_thumbnails/20_connecting_the_lambda_to_the_bucket.html" title="사진 버킷을 처리함수와 연결하기" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/70_generating_thumbnails/20_connecting_the_lambda_to_the_bucket.html">
         사진 버킷을 처리함수와 연결하기
         
         </a>
@@ -599,8 +599,8 @@
  
   
     
-      <li data-nav-id="/amp/110_ai/10_rekognition.html" title="Amazon Rekognition 연동하기" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/110_ai/10_rekognition.html">
+      <li data-nav-id="/110_ai/10_rekognition.html" title="Amazon Rekognition 연동하기" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/110_ai/10_rekognition.html">
         Amazon Rekognition 연동하기
         
         </a>
@@ -618,8 +618,8 @@
  
   
     
-      <li data-nav-id="/amp/110_ai/20_prep_for_searching.html" title="사진을 검색할 수 있게 만들기" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/110_ai/20_prep_for_searching.html">
+      <li data-nav-id="/110_ai/20_prep_for_searching.html" title="사진을 검색할 수 있게 만들기" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/110_ai/20_prep_for_searching.html">
         사진을 검색할 수 있게 만들기
         
         </a>
@@ -637,8 +637,8 @@
  
   
     
-      <li data-nav-id="/amp/110_ai/40_searching_for_labels.html" title="사진을 레이블로 검색하기" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/110_ai/40_searching_for_labels.html">
+      <li data-nav-id="/110_ai/40_searching_for_labels.html" title="사진을 레이블로 검색하기" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/110_ai/40_searching_for_labels.html">
         사진을 레이블로 검색하기
         
         </a>
@@ -688,8 +688,8 @@
  
   
     
-      <li data-nav-id="/amp/120_deploying/10_deploying.html" title="Deploying our app to S3" class="dd-item active">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/120_deploying/10_deploying.html">
+      <li data-nav-id="/120_deploying/10_deploying.html" title="Deploying our app to S3" class="dd-item active">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/120_deploying/10_deploying.html">
         Deploying our app to S3
         
         </a>
@@ -739,8 +739,8 @@
  
   
     
-      <li data-nav-id="/amp/130_wrapping_up/10_what_we_built.html" title="축하드립니다!" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/130_wrapping_up/10_what_we_built.html">
+      <li data-nav-id="/130_wrapping_up/10_what_we_built.html" title="축하드립니다!" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/130_wrapping_up/10_what_we_built.html">
         축하드립니다!
         
         </a>
@@ -758,8 +758,8 @@
  
   
     
-      <li data-nav-id="/amp/130_wrapping_up/20_cleanup.html" title="리소스 삭제하기" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/130_wrapping_up/20_cleanup.html">
+      <li data-nav-id="/130_wrapping_up/20_cleanup.html" title="리소스 삭제하기" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/130_wrapping_up/20_cleanup.html">
         리소스 삭제하기
         
         </a>
@@ -809,8 +809,8 @@
  
   
     
-      <li data-nav-id="/amp/140_bonus/10_lightbox_photos.html" title="LIGHTBOX 만들어 전체 크기의 사진들 보기" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/140_bonus/10_lightbox_photos.html">
+      <li data-nav-id="/140_bonus/10_lightbox_photos.html" title="LIGHTBOX 만들어 전체 크기의 사진들 보기" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/140_bonus/10_lightbox_photos.html">
         LIGHTBOX 만들어 전체 크기의 사진들 보기
         
         </a>
@@ -828,8 +828,8 @@
  
   
     
-      <li data-nav-id="/amp/140_bonus/20_album_membership.html" title="다른 유저와 앨범 공유하기" class="dd-item ">
-        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/amp/140_bonus/20_album_membership.html">
+      <li data-nav-id="/140_bonus/20_album_membership.html" title="다른 유저와 앨범 공유하기" class="dd-item ">
+        <a href="https://awskrug.github.io/amplify-photo-gallery-workshop/140_bonus/20_album_membership.html">
         다른 유저와 앨범 공유하기
         
         </a>
@@ -918,7 +918,7 @@
             
           
           
-            <a href='https://awskrug.github.io/amplify-photo-gallery-workshop/amp/'>Amplify Web App Workshop</a> > <a href='https://awskrug.github.io/amplify-photo-gallery-workshop/120_deploying.html'>Publishing Our App</a> > Deploying our app to S3
+            <a href='https://awskrug.github.io/amplify-photo-gallery-workshop/'>Amplify Web App Workshop</a> > <a href='https://awskrug.github.io/amplify-photo-gallery-workshop/120_deploying.html'>Publishing Our App</a> > Deploying our app to S3
           
         
           
@@ -1578,20 +1578,20 @@ index.html</code></pre></div></li>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/clipboard.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/perfect-scrollbar.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/perfect-scrollbar.jquery.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery.sticky.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/featherlight.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/html5shiv-printshiv.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/highlight.pack.js?1555044202"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/clipboard.min.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/perfect-scrollbar.min.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/perfect-scrollbar.jquery.min.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery.sticky.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/featherlight.min.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/html5shiv-printshiv.min.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/highlight.pack.js?1555051411"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/modernizr.custom.71422.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/learn.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/hugo-learn.js?1555044202"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/modernizr.custom.71422.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/learn.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/hugo-learn.js?1555051411"></script>
 
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/mermaid/mermaid.css?1555044202" type="text/css" rel="stylesheet" />
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/mermaid/mermaid.js?1555044202"></script>
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/mermaid/mermaid.css?1555051411" type="text/css" rel="stylesheet" />
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/mermaid/mermaid.js?1555051411"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

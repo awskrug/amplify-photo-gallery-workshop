@@ -8,7 +8,7 @@
     <meta property="og:url" content="https://amplify-workshop.go-aws.com" />
     <meta property="og:image" content="https://amplify-workshop.go-aws.com/images/architecture.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0-DEV" />
+    <meta name="generator" content="Hugo 0.53" />
     <meta name="description" content="Amplify / AppSync / React Workshop">
 <meta name="author" content="Gabe Hollombe">
 
@@ -17,24 +17,24 @@
     <title>백엔드 구성하기 :: Amplify / AppSync / React Workshop</title>
 
     
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/nucleus.css?1555044202" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/nucleus.css?1555051411" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/hybrid.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/featherlight.min.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/perfect-scrollbar.min.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/auto-complete.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/theme.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/hugo-theme.css?1555044202" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/hybrid.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/featherlight.min.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/perfect-scrollbar.min.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/auto-complete.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/theme.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/hugo-theme.css?1555051411" rel="stylesheet">
     
-      <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/theme-mine.css?1555044202" rel="stylesheet">
+      <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/theme-mine.css?1555051411" rel="stylesheet">
     
 
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.min.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.structure.min.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.theme.min.css?1555044202" rel="stylesheet">
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery-2.x.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery-ui.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/tabs.js?1555044202"></script>
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.min.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.structure.min.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.theme.min.css?1555051411" rel="stylesheet">
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery-2.x.min.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery-ui.min.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/tabs.js?1555051411"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/lunr.min.js?1555044202"></script>
-<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/auto-complete.js?1555044202"></script>
+<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/lunr.min.js?1555051411"></script>
+<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/auto-complete.js?1555051411"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/search.js?1555044202"></script>
+<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/search.js?1555051411"></script>
 
     
   </div>
@@ -963,9 +963,9 @@
 
 <p>이제 우리에게 간단한 리액트 앱이 있으니, 앱으로 사용자 등록하고 로그인하도록 만들겠습니다. 지금 아무 것도 할 수 없지만 백엔드 API에 조회하는 기능을 추가하면 어떤 사용자가 우리 시스템을 사용하는지 알 수 있습니다.</p>
 
-<div class="notices info" >
-AWS Amplify CLI는 리엑트와 리엑트 네이티브용 iOS와 안드로이드에 SDK를 제공하여 웹과 모바일 앱에 클라우드 기능을 손쉽게 추가할 수 있습니다. 시작을 위해 새 애플리케이션을 만들고 사용자 인증을 가능토록 합니다. 앱에 AWS Amplify CLI로 구성하여 앱과 오픈소스 [AWS Amplify](https://aws-amplify.github.io/) 라이브러리를 연결합니다. 이제 해야 할 것은 리액트 앱에서 이것을  사용하면 됩니다. AWS Amplify는 클라우드 서비스에서 동작하는 괜찮은 추상화와 앱에서 사용할 유용한 리액트 컴포넌트를 포함합니다.
+<div class="notices info" ><p>AWS Amplify CLI는 리엑트와 리엑트 네이티브용 iOS와 안드로이드에 SDK를 제공하여 웹과 모바일 앱에 클라우드 기능을 손쉽게 추가할 수 있습니다. 시작을 위해 새 애플리케이션을 만들고 사용자 인증을 가능토록 합니다. 앱에 AWS Amplify CLI로 구성하여 앱과 오픈소스 <a href="https://aws-amplify.github.io/" target="_blank">AWS Amplify</a> 라이브러리를 연결합니다. 이제 해야 할 것은 리액트 앱에서 이것을  사용하면 됩니다. AWS Amplify는 클라우드 서비스에서 동작하는 괜찮은 추상화와 앱에서 사용할 유용한 리액트 컴포넌트를 포함합니다.</p>
 </div>
+
 
 <p>로그인 화면은 다음과 같습니다.
 <img src="https://awskrug.github.io/amplify-photo-gallery-workshop/images/app-signin-screen.png?classes=border" alt="Here's what the sign-in screen looks like" /></p>
@@ -994,9 +994,9 @@ AWS Amplify CLI는 리엑트와 리엑트 네이티브용 iOS와 안드로이드
 
 <p><img src="https://awskrug.github.io/amplify-photo-gallery-workshop/images/amplify_init.png" alt="amplify init" /></p>
 
-<div class="notices info" >
-이렇게 하면 [Amazon Cognito](https://aws.amazon.com/cognito/) 유저 풀을 구성하여 사용자가 가입하고 로그인을 위한 백엔드 역할을 할 수 있는 새 로컬 구성을 생성합니다(Amazon Cognito와 유저 풀에 대한 자세한 내용은 아래에 있습니다). 이 단계를 더 자세히 아시려면 [AWS Amplify 인증 가이드](https://aws-amplify.github.io/amplify-js/media/authentication_guide.html)에서 'Installation and Configuration' 항목을 살펴보십시요.
+<div class="notices info" ><p>이렇게 하면 <a href="https://aws.amazon.com/cognito/" target="_blank">Amazon Cognito</a> 유저 풀을 구성하여 사용자가 가입하고 로그인을 위한 백엔드 역할을 할 수 있는 새 로컬 구성을 생성합니다(Amazon Cognito와 유저 풀에 대한 자세한 내용은 아래에 있습니다). 이 단계를 더 자세히 아시려면 <a href="https://aws-amplify.github.io/amplify-js/media/authentication_guide.html" target="_blank">AWS Amplify 인증 가이드</a>에서 &lsquo;Installation and Configuration&rsquo; 항목을 살펴보십시요.</p>
 </div>
+
 
 <h3 id="인증-추가하기">인증 추가하기</h3>
 
@@ -1010,15 +1010,15 @@ AWS Amplify CLI는 리엑트와 리엑트 네이티브용 iOS와 안드로이드
 <li><p>프로비저닝이 완료될 때까지 기다립니다. 몇 분이 소요됩니다.</p></li>
 </ol>
 
-<div class="notices info" >
-Amplify CLI는 적절한 클라우드 리소스로 프로비저닝하고 src/aws-exports.js 파일을 앱에서 사용하는 클라우드 리소스의 모든 구성 데이터로 갱신합니다.
+<div class="notices info" ><p>Amplify CLI는 적절한 클라우드 리소스로 프로비저닝하고 src/aws-exports.js 파일을 앱에서 사용하는 클라우드 리소스의 모든 구성 데이터로 갱신합니다.</p>
 </div>
+
 
 <p>축하합니다! 바로 방금 귀하는 Amazon Cognito로 수백만 사용자까지 확장할 수 있는 사용자 등록과 권한 부여를 위한 서버리스 백엔드를 만들었습니다.</p>
 
-<div class="notices tip" >
-Amazon Cognito를 사용하면 웹과 모바일 애플리케이션에 사용자 등록, 로그인, 접근제어 기능을 쉽고 빠르게 추가할 수 있습니다. 방금 생성한 유저 풀은 보안된 사용자 디렉터리로 이를 이용하여 사용자가 생성한 사용자명과 암호로 로그인할 수 있습니다. Amazon Cognito(Amplify CLI 함께)는 또한 Facebook, Google, Amazon 같은 소셜 인증 공급자와 SAML 2.0을 통한 엔터프라이즈 인증 공급자를 이용한 로그인 구성도 지원합니다. 자세한 내용을 알기 원하시면 [Amazon Cognito Developer Resources page](https://aws.amazon.com/cognito/dev-resources/)와 [AWS Amplify Authentication documentation.](https://aws-amplify.github.io/amplify-js/media/authentication_guide#federated-identities-social-sign-in)를 살펴보십시요.
+<div class="notices tip" ><p>Amazon Cognito를 사용하면 웹과 모바일 애플리케이션에 사용자 등록, 로그인, 접근제어 기능을 쉽고 빠르게 추가할 수 있습니다. 방금 생성한 유저 풀은 보안된 사용자 디렉터리로 이를 이용하여 사용자가 생성한 사용자명과 암호로 로그인할 수 있습니다. Amazon Cognito(Amplify CLI 함께)는 또한 Facebook, Google, Amazon 같은 소셜 인증 공급자와 SAML 2.0을 통한 엔터프라이즈 인증 공급자를 이용한 로그인 구성도 지원합니다. 자세한 내용을 알기 원하시면 <a href="https://aws.amazon.com/cognito/dev-resources/" target="_blank">Amazon Cognito Developer Resources page</a>와 <a href="https://aws-amplify.github.io/amplify-js/media/authentication_guide#federated-identities-social-sign-in" target="_blank">AWS Amplify Authentication documentation.</a>를 살펴보십시요.</p>
 </div>
+
 
 
 <footer class=" footline" >
@@ -1606,20 +1606,20 @@ Amazon Cognito를 사용하면 웹과 모바일 애플리케이션에 사용자 
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/clipboard.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/perfect-scrollbar.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/perfect-scrollbar.jquery.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery.sticky.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/featherlight.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/html5shiv-printshiv.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/highlight.pack.js?1555044202"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/clipboard.min.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/perfect-scrollbar.min.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/perfect-scrollbar.jquery.min.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery.sticky.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/featherlight.min.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/html5shiv-printshiv.min.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/highlight.pack.js?1555051411"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/modernizr.custom.71422.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/learn.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/hugo-learn.js?1555044202"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/modernizr.custom.71422.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/learn.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/hugo-learn.js?1555051411"></script>
 
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/mermaid/mermaid.css?1555044202" type="text/css" rel="stylesheet" />
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/mermaid/mermaid.js?1555044202"></script>
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/mermaid/mermaid.css?1555051411" type="text/css" rel="stylesheet" />
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/mermaid/mermaid.js?1555051411"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

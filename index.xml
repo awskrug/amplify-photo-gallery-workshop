@@ -16,7 +16,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/1_account.html</guid>
-      <description>Workshop에서 사용하고자 하는 AWS 계정은 새로운 IAM 역할을 만들수 있어야 하고 다른 IAM 권한 범위를 지정할 수 있어야 합니다.  이미 AWS 계정을 가지고 있고, IAM 관리자 접속 권한이 있다면 이 페이지를 넘어가도 좋습니다.   관리자 접속 권한 계정이 없다면: 새로 하나 만듭시다.
+      <description>Workshop에서 사용하고자 하는 AWS 계정은 새로운 IAM 역할을 만들수 있어야 하고 다른 IAM 권한 범위를 지정할 수 있어야 합니다.
+ 이미 AWS 계정을 가지고 있고, IAM 관리자 접속 권한이 있다면 이 페이지를 넘어가도 좋습니다.
+  관리자 접속 권한 계정이 없다면: 새로 하나 만듭시다.
  AWS 계정을 가지게 되었다면, 남은 워크샵 단계를 잘 따르고 있는 확인해보세요.
 AWS 계정에 대한 관리자 권한이 있는 IAM user : 워크샵에서 사용할 IAM user를 만듭니다.</description>
     </item>
@@ -28,7 +30,8 @@ AWS 계정에 대한 관리자 권한이 있는 IAM user : 워크샵에서 사�
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/50_working_with_albums/5_managing_albums.html</guid>
       <description>이 시점에서 사용자를 인증하는 웹 앱과 앨범 데이터를 만들고 읽을 수있는 안전한 GraphQL API 엔드 포인트가 있습니다. 이제 둘을 연결하는 시간입니다!
-위에서 보았 듯이 [AWS Amplify] (https://aws.github.io/aws-amplify/)는 웹 또는 React Native 앱에 다수의 클라우드 서비스를 통합하기가 쉬운 오픈 소스 JavaScript 라이브러리입니다. 먼저 [Connect React 구성 요소] (https://aws-amplify.github.io/docs/js/api#connect)를 사용하여 GraphQL API를 자동으로 쿼리하고 React 구성 요소에 대한 데이터를 제공합니다. 렌더링 할 때 사용합니다.  Amplify CLI는 이미 *src/aws-exports.js* 파일에 AppSync API와 통신하기 위해 Amplify JS 라이브러리에 전달해야하는 모든 구성이 포함되어 있는지 확인했습니다.</description>
+위에서 보았 듯이 AWS Amplify는 웹 또는 React Native 앱에 다수의 클라우드 서비스를 통합하기가 쉬운 오픈 소스 JavaScript 라이브러리입니다. 먼저 Connect React 구성 요소를 사용하여 GraphQL API를 자동으로 쿼리하고 React 구성 요소에 대한 데이터를 제공합니다. 렌더링 할 때 사용합니다. 
+Amplify CLI는 이미 src/aws-exports.js 파일에 AppSync API와 통신하기 위해 Amplify JS 라이브러리에 전달해야하는 모든 구성이 포함되어 있는지 확인했습니다.</description>
     </item>
     
     <item>
@@ -38,7 +41,7 @@ AWS 계정에 대한 관리자 권한이 있는 IAM user : 워크샵에서 사�
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/110_ai/10_rekognition.html</guid>
       <description>직접 태깅하지 않은 이미지도 검색할 수 있으면 좋겠습니다. 다행이 Amazon Rekognition 덕분에 이 기능을 추가하기는 매우 쉽습니다. 사진을 주면 해당 이미지에 적절한 레이블로 응답하는 DetectLabels API를 사용할 수 있습니다. 완벽합니다!
-**Amazon Rekognition의 DetectLabels 간략 정리**  입력한 이미지를 base64 인코딩한 이미지 바이트열이나 Amazon S3 버킷에 이미지 참조로 전달합니다. AWS CLI로 Amazon Rekognition 작업을 호출하는 경우 이미지 바이트열을 전달하는 기능은 지원하지 않습니다. 이미지는 PNG 또는 JPEG 형식의 파일이어야 합니다.  API는 각 개체와 장면과 컨셉에 따라 하나 이상의 레이블을 반환합니다.</description>
+Amazon Rekognition의 DetectLabels 간략 정리  입력한 이미지를 base64 인코딩한 이미지 바이트열이나 Amazon S3 버킷에 이미지 참조로 전달합니다. AWS CLI로 Amazon Rekognition 작업을 호출하는 경우 이미지 바이트열을 전달하는 기능은 지원하지 않습니다. 이미지는 PNG 또는 JPEG 형식의 파일이어야 합니다.  API는 각 개체와 장면과 컨셉에 따라 하나 이상의 레이블을 반환합니다.</description>
     </item>
     
     <item>
@@ -48,7 +51,8 @@ AWS 계정에 대한 관리자 권한이 있는 IAM user : 워크샵에서 사�
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/40_graphql/10_setting_up_appsync.html</guid>
       <description>이제 인증된 사용자를 가지고 앨범을 만들기 위한 API를 만들어 봅시다. 이 앨범에는 아직 사진이 없고 단순히 이름과 앨범을 생성한 사용자 이름만 있을 것입니다.
-[AWS AppSync](https://aws.amazon.com/appsync/)를 사용하여 API를 구현하고, 데이터 기반 어플리케이션을 구현하기 위하여 관리형 GraphQL 서비스를 사용합니다. 아직 GraphQL이 익숙하지 않다면 워크샵 단계를 진행하기 전에 시간을 내어 다음 자료를 살펴 보세요. [https://graphql.github.io/learn/](https://graphql.github.io/learn/) 단계를 계속하는 동안에도 질문이 생긴다면 위 자료를 참조하시기 바랍니다.  AWS AppSync API 추가하기 photo-albums 디렉토리에서 다음 명령어를 수행하세요 amplify add api</description>
+AWS AppSync를 사용하여 API를 구현하고, 데이터 기반 어플리케이션을 구현하기 위하여 관리형 GraphQL 서비스를 사용합니다. 아직 GraphQL이 익숙하지 않다면 워크샵 단계를 진행하기 전에 시간을 내어 다음 자료를 살펴 보세요. https://graphql.github.io/learn/ 단계를 계속하는 동안에도 질문이 생긴다면 위 자료를 참조하시기 바랍니다.
+ AWS AppSync API 추가하기 photo-albums 디렉토리에서 다음 명령어를 수행하세요 amplify add api</description>
     </item>
     
     <item>
@@ -92,7 +96,7 @@ The Cloud9의 작업영역은 AWS root 계정이 아닌, Administrator 권한�
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/30_adding_auth/10_adding_auth_back.html</guid>
       <description>이제 우리에게 간단한 리액트 앱이 있으니, 앱으로 사용자 등록하고 로그인하도록 만들겠습니다. 지금 아무 것도 할 수 없지만 백엔드 API에 조회하는 기능을 추가하면 어떤 사용자가 우리 시스템을 사용하는지 알 수 있습니다.
-AWS Amplify CLI는 리엑트와 리엑트 네이티브용 iOS와 안드로이드에 SDK를 제공하여 웹과 모바일 앱에 클라우드 기능을 손쉽게 추가할 수 있습니다. 시작을 위해 새 애플리케이션을 만들고 사용자 인증을 가능토록 합니다. 앱에 AWS Amplify CLI로 구성하여 앱과 오픈소스 [AWS Amplify](https://aws-amplify.github.io/) 라이브러리를 연결합니다. 이제 해야 할 것은 리액트 앱에서 이것을 사용하면 됩니다.</description>
+AWS Amplify CLI는 리엑트와 리엑트 네이티브용 iOS와 안드로이드에 SDK를 제공하여 웹과 모바일 앱에 클라우드 기능을 손쉽게 추가할 수 있습니다. 시작을 위해 새 애플리케이션을 만들고 사용자 인증을 가능토록 합니다. 앱에 AWS Amplify CLI로 구성하여 앱과 오픈소스 AWS Amplify 라이브러리를 연결합니다. 이제 해야 할 것은 리액트 앱에서 이것을 사용하면 됩니다.</description>
     </item>
     
     <item>
@@ -102,7 +106,8 @@ AWS Amplify CLI는 리엑트와 리엑트 네이티브용 iOS와 안드로이드
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/70_generating_thumbnails/10_creating_a_photo_processor_lambda.html</guid>
       <description>사진 처리 람다 함수를 만들어서 사진을 리사이즈 할 수 있게 합니다.
-아래 지시를 따를 때에 **람다 함수명을 반드시 _workshopphotoprocessor_ 으로 합니다**.   이후에 몇가지 클라우드 포메이션 템플릿을 수정하고, 이름이 **workshopphotoprocessor**인 함수는 이번 워크샵을 위해 하드 코딩합니다(꼭 수정할 부분을 줄이기 위해)   photo-albums 디렉토리에서 amplify function add를 실행해서 아래 보여진 것과 비슷한 방식으로 프롬프트에 답합니다. 두번째 단계를 계속하기 전에 엔터를 꼭 눌러야 합니다.
+아래 지시를 따를 때에 람다 함수명을 반드시 workshopphotoprocessor 으로 합니다.   이후에 몇가지 클라우드 포메이션 템플릿을 수정하고, 이름이 workshopphotoprocessor인 함수는 이번 워크샵을 위해 하드 코딩합니다(꼭 수정할 부분을 줄이기 위해)
+  photo-albums 디렉토리에서 amplify function add를 실행해서 아래 보여진 것과 비슷한 방식으로 프롬프트에 답합니다. 두번째 단계를 계속하기 전에 엔터를 꼭 눌러야 합니다.
 $ amplify function add Using service: Lambda, provided by: awscloudformation ?</description>
     </item>
     
@@ -132,9 +137,9 @@ $ amplify function add Using service: Lambda, provided by: awscloudformation ?</
       <description>AWS Console로 접근하여 photoalbums API를 클릭합니다. 이제 API를 파고들어봅시다.
  Link to AWS AppSync web console in Northern Virgina
  Link to AWS AppSync web console in Ireland
- 
-왼쪽 사이드바에 있는 Queries를 클릭합니다.
-AWS AppSync의 대화형 쿼리 실행 영역인 이곳에서 쿼리를 작성하거나 변경하고, 쿼리를 실행하여 결과를 볼 수 있습니다. 이는 Resolver들이 우리가 예상한 대로 잘 작동하는지 테스트하기 위한 좋은 방법입니다.  AppSync 인증 쿼리를 실행하기 전에 사용자 인증이 필요합니다.</description>
+  왼쪽 사이드바에 있는 Queries를 클릭합니다.
+AWS AppSync의 대화형 쿼리 실행 영역인 이곳에서 쿼리를 작성하거나 변경하고, 쿼리를 실행하여 결과를 볼 수 있습니다. 이는 Resolver들이 우리가 예상한 대로 잘 작동하는지 테스트하기 위한 좋은 방법입니다.
+ AppSync 인증 쿼리를 실행하기 전에 사용자 인증이 필요합니다.</description>
     </item>
     
     <item>
@@ -199,7 +204,9 @@ DynamoDB 쿼리로 검색하는 방법도 가능하지만, Amazon Elasticsearch 
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/20_getting_started/20_bootstrapping_the_app.html</guid>
       <description>리액트(React) 앱 만들기 create-react-app CLI로 새로운 리액트 웹 앱을 제작하며 시작하겠습니다.
-이는 로컬에서 자동으로 다시 서버를 띄워주는 리액트 샘플 앱과 브라우저에서 async/await 문법, 화살표 함수 등을 지원하도록 트랜스 컴파일 기능을 제공합니다.  create-react-app은 [https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)에서 좀 더 배울 수 있습니다.  Cloud9 터미널에서 npx create-react-app photo-albums를 실행하시고 새로 생성된 디렉토리로 이동합니다 cd photo-albums
+이는 로컬에서 자동으로 다시 서버를 띄워주는 리액트 샘플 앱과 브라우저에서 async/await 문법, 화살표 함수 등을 지원하도록 트랜스 컴파일 기능을 제공합니다.
+ create-react-app은 https://github.com/facebook/create-react-app에서 좀 더 배울 수 있습니다.
+ Cloud9 터미널에서 npx create-react-app photo-albums를 실행하시고 새로 생성된 디렉토리로 이동합니다 cd photo-albums
 시멘틱 UI 리액트 추가하기 UI를 작성하기 전에 인터페이스를 좀 더 근사하게 만들수 있는 리액트의 시멘틱 UI 컴포넌트를 추가합니다.</description>
     </item>
     
@@ -222,7 +229,8 @@ Amplify NPM 종속성 추가 아직 aws-amplify, aws-amplify-react 모듈을 앱
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/60_managing_photos/30_adding_storage.html</guid>
       <description>We&amp;rsquo;ll need a place to store all of the photos that get uploaded to our albums. Amazon Simple Storage Service (S3) is a great option for this and Amplify&amp;rsquo;s Storage module makes setting up and working with S3 very easy.
-You can read more about Amplify&#39;s Storage module [here](https://aws-amplify.github.io/amplify-js/media/storage_guide).  Configuring and adding storage First, we&amp;rsquo;ll use the Amplify CLI to enable storage for our app. This will create a bucket on Amazon S3 and set it up with appropriate permissions so that users who are logged in to our app can read from and write to it.</description>
+You can read more about Amplify&amp;rsquo;s Storage module here.
+ Configuring and adding storage First, we&amp;rsquo;ll use the Amplify CLI to enable storage for our app. This will create a bucket on Amazon S3 and set it up with appropriate permissions so that users who are logged in to our app can read from and write to it.</description>
     </item>
     
     <item>

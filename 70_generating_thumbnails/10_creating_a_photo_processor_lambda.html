@@ -8,7 +8,7 @@
     <meta property="og:url" content="https://amplify-workshop.go-aws.com" />
     <meta property="og:image" content="https://amplify-workshop.go-aws.com/images/architecture.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.56.0-DEV" />
+    <meta name="generator" content="Hugo 0.53" />
     <meta name="description" content="Amplify / AppSync / React Workshop">
 <meta name="author" content="Gabe Hollombe">
 
@@ -17,24 +17,24 @@
     <title>사진을 처리하는 람다 함수 만들기 :: Amplify / AppSync / React Workshop</title>
 
     
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/nucleus.css?1555044202" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/nucleus.css?1555051411" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/hybrid.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/featherlight.min.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/perfect-scrollbar.min.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/auto-complete.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/theme.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/hugo-theme.css?1555044202" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/hybrid.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/featherlight.min.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/perfect-scrollbar.min.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/auto-complete.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/theme.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/hugo-theme.css?1555051411" rel="stylesheet">
     
-      <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/theme-mine.css?1555044202" rel="stylesheet">
+      <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/theme-mine.css?1555051411" rel="stylesheet">
     
 
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.min.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.structure.min.css?1555044202" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.theme.min.css?1555044202" rel="stylesheet">
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery-2.x.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery-ui.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/tabs.js?1555044202"></script>
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.min.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.structure.min.css?1555051411" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.theme.min.css?1555051411" rel="stylesheet">
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery-2.x.min.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery-ui.min.js?1555051411"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/tabs.js?1555051411"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/lunr.min.js?1555044202"></script>
-<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/auto-complete.js?1555044202"></script>
+<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/lunr.min.js?1555051411"></script>
+<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/auto-complete.js?1555051411"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/search.js?1555044202"></script>
+<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/search.js?1555051411"></script>
 
     
   </div>
@@ -962,12 +962,12 @@
 
 <p>사진 처리 람다 함수를 만들어서 사진을 리사이즈 할 수 있게 합니다.</p>
 
-<div class="notices warning" >
-아래 지시를 따를 때에 **람다 함수명을 반드시 _workshopphotoprocessor_ 으로 합니다**.
+<div class="notices warning" ><p>아래 지시를 따를 때에 <strong>람다 함수명을 반드시 <em>workshopphotoprocessor</em> 으로 합니다</strong>.
 <br/>
 <br/>
-이후에 몇가지 클라우드 포메이션 템플릿을 수정하고, 이름이 **workshopphotoprocessor**인 함수는 이번 워크샵을 위해 하드 코딩합니다(꼭 수정할 부분을 줄이기 위해)
+이후에 몇가지 클라우드 포메이션 템플릿을 수정하고, 이름이 <strong>workshopphotoprocessor</strong>인 함수는 이번 워크샵을 위해 하드 코딩합니다(꼭 수정할 부분을 줄이기 위해)</p>
 </div>
+
 
 <ol>
 <li><p><strong>photo-albums 디렉토리에서</strong> <code>amplify function add</code>를 실행해서 아래 보여진 것과 비슷한 방식으로 프롬프트에 답합니다. 두번째 단계를 계속하기 전에 엔터를 꼭 눌러야 합니다.</p>
@@ -1385,12 +1385,12 @@ Successfully added resource workshopphotoprocessor locally.</code></pre></div></
 <li><p>함수에서 Amazon Rekognition의 detectLabels API를 사용할 수 있도록 허가하는 <em>RekognitionDetectLabels</em> 라는 IAM 정책을 추가하였습니다. 이 정책은 아직 사용하지 않지만, 관련 파일을 작업하는 동안이라 편의상 여기에 추가하였으니, 다음 장에서 AI로 자동으로 사진을 태깅하는 것에 관하여 다룰 때 여기로 돌아와서 정책을 추가하지 않아도 됩니다.</p></li>
 </ul>
 
-<div class="notices warning" >
-AWS Amplify CLI는 클라우드포메이션 템플릿을 생성하여 프로젝트의 클라우드 리소스를 관리합니다. 클라우드포메이션 템플릿은 프로젝트의 모든 인프라 구성을 JSON 이나 또는 YAML 파일 형식의 코드로 지정하여 매우 유용합니다. 이 워크샵에서는 생성된 클라우드포메이션 템플릿의 일부를 계속 편집할 것입니다.
-<br/> <br/>
+<div class="notices warning" ><p>AWS Amplify CLI는 클라우드포메이션 템플릿을 생성하여 프로젝트의 클라우드 리소스를 관리합니다. 클라우드포메이션 템플릿은 프로젝트의 모든 인프라 구성을 JSON 이나 또는 YAML 파일 형식의 코드로 지정하여 매우 유용합니다. 이 워크샵에서는 생성된 클라우드포메이션 템플릿의 일부를 계속 편집할 것입니다.
+<br/> <br/></p>
 
-모든 변경 사항을 안전하게 적용할 수는 없고, 수정한 클라우드포메이션 템플릿을 Amplify CLI가 덮어 쓸 수 있음을 주의하십시요. 다만 이 워크샵에서는 우리가 수정한 모든 내용은 Amplify가 덮어 쓰지 않는데, 이는 편집한 리소스를 다시 구성하거나 제거하는 명령을 실행하지 않았기 때문으로, CLI를 이용하여 이미 Amplify로 생성한 리소스를 재구성한다면 이런 경우가 _발생할 수 있다_ 는 것을 기억하는 것이 좋습니다.
+<p>모든 변경 사항을 안전하게 적용할 수는 없고, 수정한 클라우드포메이션 템플릿을 Amplify CLI가 덮어 쓸 수 있음을 주의하십시요. 다만 이 워크샵에서는 우리가 수정한 모든 내용은 Amplify가 덮어 쓰지 않는데, 이는 편집한 리소스를 다시 구성하거나 제거하는 명령을 실행하지 않았기 때문으로, CLI를 이용하여 이미 Amplify로 생성한 리소스를 재구성한다면 이런 경우가 <em>발생할 수 있다</em> 는 것을 기억하는 것이 좋습니다.</p>
 </div>
+
 
 
 <footer class=" footline" >
@@ -1978,20 +1978,20 @@ AWS Amplify CLI는 클라우드포메이션 템플릿을 생성하여 프로젝�
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/clipboard.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/perfect-scrollbar.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/perfect-scrollbar.jquery.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery.sticky.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/featherlight.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/html5shiv-printshiv.min.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/highlight.pack.js?1555044202"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/clipboard.min.js?1555051412"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/perfect-scrollbar.min.js?1555051412"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/perfect-scrollbar.jquery.min.js?1555051412"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery.sticky.js?1555051412"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/featherlight.min.js?1555051412"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/html5shiv-printshiv.min.js?1555051412"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/highlight.pack.js?1555051412"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/modernizr.custom.71422.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/learn.js?1555044202"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/hugo-learn.js?1555044202"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/modernizr.custom.71422.js?1555051412"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/learn.js?1555051412"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/hugo-learn.js?1555051412"></script>
 
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/mermaid/mermaid.css?1555044202" type="text/css" rel="stylesheet" />
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/mermaid/mermaid.js?1555044202"></script>
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/mermaid/mermaid.css?1555051412" type="text/css" rel="stylesheet" />
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/mermaid/mermaid.js?1555051412"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
