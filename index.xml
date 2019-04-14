@@ -223,24 +223,25 @@ Amplify NPM 종속성 추가 아직 aws-amplify, aws-amplify-react 모듈을 앱
     </item>
     
     <item>
-      <title>Adding Cloud Storage</title>
+      <title>Cloud Storage 추가하기</title>
       <link>https://awskrug.github.io/amplify-photo-gallery-workshop/60_managing_photos/30_adding_storage.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/60_managing_photos/30_adding_storage.html</guid>
-      <description>We&amp;rsquo;ll need a place to store all of the photos that get uploaded to our albums. Amazon Simple Storage Service (S3) is a great option for this and Amplify&amp;rsquo;s Storage module makes setting up and working with S3 very easy.
-You can read more about Amplify&amp;rsquo;s Storage module here.
- Configuring and adding storage First, we&amp;rsquo;ll use the Amplify CLI to enable storage for our app. This will create a bucket on Amazon S3 and set it up with appropriate permissions so that users who are logged in to our app can read from and write to it.</description>
+      <description>앨범에 업로드한 모든 사진들을 보관할 저장소가 필요합니다. Amazon Simple Storage Service (S3)는 이를 위한 좋은 서비스이기도 하고 Amplify의 스토리지 모듈을 이용하면 S3에 대한 설정과 작업이 아주 쉽습니다.
+Amplify 스토리지 모듈에 대해 다음 자료를 참고하세요. here.
+ 스토리지 구성 및 추가 먼저, Amplify CLI로 어플리케이션의 스토리지를 활성화 합니다. 이 작업은 Amazon S3에 Bucket을 생성하고 앱에 로그인한 사용자들이 버킷을 읽고 쓸수 있는 적잘한 권한을 설정해 줍니다.
+ 사진앨범 디렉토리에서 다음 명령어를 수행합니다.</description>
     </item>
     
     <item>
-      <title>Managing Photos</title>
+      <title>사진 관리하기</title>
       <link>https://awskrug.github.io/amplify-photo-gallery-workshop/60_managing_photos/40_upload_photos_consolidated.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/60_managing_photos/40_upload_photos_consolidated.html</guid>
-      <description>Now that we have an S3 bucket where our photos can get stored, we&amp;rsquo;ll want to create a UI that lets us upload photos to that bucket for storage. We&amp;rsquo;ll also need to track that the photo was intended to be part of a specific album that it was uploaded to, so that we can eventually load all of the photos that belong to that album.
-Let&amp;rsquo;s create a new S3ImageUpload component that will contain an HTML file input element which will fire off an event handler when a user selects a photo.</description>
+      <description>사진을 저장할수 있는 S3 bucket이 생겼으니 사진을 버킷에 사진을 업로드 하도록 도와줄 UI가 필요합니다. 그리고 앨범에 속한 모든 사진들을 로드 하기 위해서 사진들이 앨범에서 어떤 특정 부분에 속하는지 추적 할수 있어야 합니다.
+새로운 S3ImageUpload 컴포넌트를 만들어 봅시다. 이 컴포넌트는 사용자가 사진을 선택할때 이벤트 핸들러를 실행시키는 input 엘리먼트를 가진 HTML 파일을 포함합니다. 업로드 이벤트 핸들러는 사진이 포함될 앨범이 무엇인지 설명해주는 주석을 가진 메타데이터가 있는 파일을 S3에 업로드 합니다. 다행히 Amplify JS Storage module은, S3에 파일업로드 작업을 매우 쉽게 할 수 있습니다.</description>
     </item>
     
     <item>
