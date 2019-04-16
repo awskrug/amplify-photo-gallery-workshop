@@ -1,6 +1,6 @@
 [
 {
-	"uri": "https://awskrug.github.io/amplify-photo-gallery-workshop/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/1_account.html",
+	"uri": "https://awskrug.github.io/amplify-photo-gallery-workshop/10_prerequisites/1_account.html",
 	"title": "AWS account 생성하기",
 	"tags": [],
 	"description": "",
@@ -35,7 +35,7 @@
 	"content": " 이제 인증된 사용자를 가지고 앨범을 만들기 위한 API를 만들어 봅시다. 이 앨범에는 아직 사진이 없고 단순히 이름과 앨범을 생성한 사용자 이름만 있을 것입니다.\nAWS AppSync를 사용하여 API를 구현하고, 데이터 기반 어플리케이션을 구현하기 위하여 관리형 GraphQL 서비스를 사용합니다. 아직 GraphQL이 익숙하지 않다면 워크샵 단계를 진행하기 전에 시간을 내어 다음 자료를 살펴 보세요. https://graphql.github.io/learn/ 단계를 계속하는 동안에도 질문이 생긴다면 위 자료를 참조하시기 바랍니다.\n AWS AppSync API 추가하기 photo-albums 디렉토리에서 다음 명령어를 수행하세요 amplify add api\n수행결과는 다음과 같습니다.\n$ amplify add api ? Please select from one of the below mentioned services GraphQL ? Provide API name: photoalbums ? Choose an authorization type for the API Amazon Cognito User Pool ? Do you have an annotated GraphQL schema? No ? Do you want a guided schema creation? Yes ? What best describes your project: One-to-many relationship (e.g., “Blogs” with “Posts” and “Comments”) ? Do you want to edit the schema now? Yes Please manually edit the file created at /home/ec2-user/environment/photo-albums/amplify/backend/api/photoalbums/schema.graphql ? Press enter to continue  GraphQL Schema 정의 앨범과 사진을 저장하고 조회하기 위한 스키마 정의입니다.\n 다음 경로의 파일에 photo-albums/amplify/backend/api/photoalbums/schema.graphql 아래 내용을 복사하여 붙여넣습니다. 예제 스키마 컨텐츠를 대체합니다. 파일을 저장하는 것을 잊지 마세요.\n참고 : Cloud9에서 터미널의 파일 이름에 마우스를 올려 놓고 클릭 한 다음 \u0026lsquo;열기\u0026rsquo;를 선택할 수 있습니다.\n# amplify/backend/api/photo-albums/schema.graphql type Album @model @auth(rules: [{allow: owner}]) { id: ID! name: String! photos: [Photo] @connection(name: \u0026#34;AlbumPhotos\u0026#34;) } type Photo @model @auth(rules: [{allow: owner}]) { id: ID! album: Album @connection(name: \u0026#34;AlbumPhotos\u0026#34;) bucket: String! fullsize: PhotoS3Info! thumbnail: PhotoS3Info! } type PhotoS3Info { key: String! width: Int! height: Int! } 명령 프롬프트로 돌아가서 Enter 를 한번만 눌러 계속 진행합니다.\n amplify push 명령어를 수행하세요 그리고 업데이트를 계속 진행할 것인지 확인합니다.\n 코드 생성에 대한 메세지가 표시되면, \u0026lsquo;No\u0026rsquo;를 선택합니다.\n Amplify가 새로운 리소스를 프로비저닝하는 동안 몇 분 정도 기다립니다.\n  이제 Code 작성 없이 앨범과 사진 데이터에 대하여 CRUDL 작업을 수행할 수 있는 GraphQL API가 생겼습니다!  AWS AppSync가 필드를 데이터로 변환하는 방식이 숨겨져 있는것은 아니니 걱정하지 마세요. 자동으로 생성된 각 resolver들은 우리가 보기에 적절하도록 수정 할 수 있습니다. (다음 단계에서 확인 할수 있습니다) 지금은 앨범을 몇개 추가하고, 그것들을 리스트로 조회해 보겠습니다.\n "
 },
 {
-	"uri": "https://awskrug.github.io/amplify-photo-gallery-workshop/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/10_workspace.html",
+	"uri": "https://awskrug.github.io/amplify-photo-gallery-workshop/10_prerequisites/10_workspace.html",
 	"title": "Cloud9 Workspace 생성하기",
 	"tags": [],
 	"description": "",
@@ -63,7 +63,7 @@
 	"content": " 이제 우리에게 간단한 리액트 앱이 있으니, 앱으로 사용자 등록하고 로그인하도록 만들겠습니다. 지금 아무 것도 할 수 없지만 백엔드 API에 조회하는 기능을 추가하면 어떤 사용자가 우리 시스템을 사용하는지 알 수 있습니다.\nAWS Amplify CLI는 리엑트와 리엑트 네이티브용 iOS와 안드로이드에 SDK를 제공하여 웹과 모바일 앱에 클라우드 기능을 손쉽게 추가할 수 있습니다. 시작을 위해 새 애플리케이션을 만들고 사용자 인증을 가능토록 합니다. 앱에 AWS Amplify CLI로 구성하여 앱과 오픈소스 AWS Amplify 라이브러리를 연결합니다. 이제 해야 할 것은 리액트 앱에서 이것을 사용하면 됩니다. AWS Amplify는 클라우드 서비스에서 동작하는 괜찮은 추상화와 앱에서 사용할 유용한 리액트 컴포넌트를 포함합니다.\n 로그인 화면은 다음과 같습니다. Amplify 초기화 ** 커맨드라인으로 photo-albums 디렉터리에서**:\n photo-albums 디렉터리로 들어갑니다. cd photo-albums\n amplify init를 실행합니다.\n \u0026lsquo;photo-albums\u0026rsquo;을 기본 프로젝트명으로 하기 위해 Enter를 누르십시요.\n environment name은 \u0026lsquo;dev\u0026rsquo;를 입력합니다.\n default editor(우리는 Cloud9을 씁니다)로 \u0026lsquo;None\u0026rsquo; 선택하십시요.\n 프롬프트가 나오면 JavaScript와 React를 선택하십시요.\n 경로와 명령어에는 기본값을 선택합니다.\n 프롬프트가 나오면 default 프로파일을 선택하십시요.\n  이렇게 하면 Amazon Cognito 유저 풀을 구성하여 사용자가 가입하고 로그인을 위한 백엔드 역할을 할 수 있는 새 로컬 구성을 생성합니다(Amazon Cognito와 유저 풀에 대한 자세한 내용은 아래에 있습니다). 이 단계를 더 자세히 아시려면 AWS Amplify 인증 가이드에서 \u0026lsquo;Installation and Configuration\u0026rsquo; 항목을 살펴보십시요.\n 인증 추가하기  인증을 추가하기 위해 amplify add auth를 실행합니다.\n 기본 인증 및 보안 구성을 사용할지 질문에는 Yes를 선택합니다.\n 클라우드에 변경 사항을 반영하기 위해 amplify push를 실행합니다.\n 프로비저닝이 완료될 때까지 기다립니다. 몇 분이 소요됩니다.\n  Amplify CLI는 적절한 클라우드 리소스로 프로비저닝하고 src/aws-exports.js 파일을 앱에서 사용하는 클라우드 리소스의 모든 구성 데이터로 갱신합니다.\n 축하합니다! 바로 방금 귀하는 Amazon Cognito로 수백만 사용자까지 확장할 수 있는 사용자 등록과 권한 부여를 위한 서버리스 백엔드를 만들었습니다.\nAmazon Cognito를 사용하면 웹과 모바일 애플리케이션에 사용자 등록, 로그인, 접근제어 기능을 쉽고 빠르게 추가할 수 있습니다. 방금 생성한 유저 풀은 보안된 사용자 디렉터리로 이를 이용하여 사용자가 생성한 사용자명과 암호로 로그인할 수 있습니다. Amazon Cognito(Amplify CLI 함께)는 또한 Facebook, Google, Amazon 같은 소셜 인증 공급자와 SAML 2.0을 통한 엔터프라이즈 인증 공급자를 이용한 로그인 구성도 지원합니다. 자세한 내용을 알기 원하시면 Amazon Cognito Developer Resources page와 AWS Amplify Authentication documentation를 살펴보십시요.\n "
 },
 {
-	"uri": "https://awskrug.github.io/amplify-photo-gallery-workshop/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84.html",
+	"uri": "https://awskrug.github.io/amplify-photo-gallery-workshop/10_prerequisites.html",
 	"title": "사전준비",
 	"tags": [],
 	"description": "",
@@ -119,7 +119,7 @@
 	"content": " GraphQL 스키마 갱신하기 이제 각 사진의 레이블을 저장할 수 있으니, AppSync API를 통해 이 데이터를 노출할 준비가 되었습니다.\nDynamoDB 쿼리로 검색하는 방법도 가능하지만, Amazon Elasticsearch Service를 사용하여 데이터를 색인하고 검색 쿼리를 다루는 방식이 좀 더 유연하고 효율적입니다. 다행이 Amplify CLI는 매우 쉽게 Amazon Elasticsearch 엔드포인트를 생성하고 앱 데이터와 연결합니다.\n photo-albums/amplify/backend/api/photoalbums/schema.graphql 을 다음 내용으로 변경합니다. # amplify/backend/api/photo-albums/schema.graphql type Album @model @auth(rules: [{allow: owner}]) { id: ID! name: String! photos: [Photo] @connection(name: \u0026#34;AlbumPhotos\u0026#34;) } type Photo @model @auth(rules: [{allow: owner}]) @searchable {  id: ID! album: Album @connection(name: \u0026#34;AlbumPhotos\u0026#34;) bucket: String! fullsize: PhotoS3Info! thumbnail: PhotoS3Info! labels: [String!] } type PhotoS3Info { key: String! width: Int! height: Int! }\n photo-albums 디렉터리에서 amplify push 실행하여 새로운 리소스를 프로비저닝합니다.\n 갱신이 끝날때까지 기다립니다. 새로운 Amazon Elasticsearch Service 엔드포인트를 생성하는데 몇 분이 소요될 수 있습니다. 이 과정은 보통 완료까지 8분에서 12분정도 소요됩니다.\n  Amplify의 GraphQL 변환에서 Amplify의 @searchable GraphQL 지시문에 대해 더 공부할 수 있습니다.\n 바뀐 것들  Amplify가 Amazon Elasticsearch Service 클러스터에 사진 데이터를 연결하는 @searchable 지시문을 Photo 타입으로 추가했습니다.\n Photo 타입에 labels 속성을 추가하여, 사진 처리 함수에서 추가된 레이블 정보도 검색할 수 있도록 Elasticserarch Service에 사진 기록의 일부로 스트리밍합니다.\n  amplify push 작업이 완료되기까지 기다리는 중에 다음 장을 계속 진행할 수 있습니다.\n "
 },
 {
-	"uri": "https://awskrug.github.io/amplify-photo-gallery-workshop/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/20_software.html",
+	"uri": "https://awskrug.github.io/amplify-photo-gallery-workshop/10_prerequisites/20_software.html",
 	"title": "설치 &amp; 설정",
 	"tags": [],
 	"description": "",

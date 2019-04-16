@@ -12,10 +12,10 @@
     
     <item>
       <title>AWS account 생성하기</title>
-      <link>https://awskrug.github.io/amplify-photo-gallery-workshop/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/1_account.html</link>
+      <link>https://awskrug.github.io/amplify-photo-gallery-workshop/10_prerequisites/1_account.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/1_account.html</guid>
+      <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/10_prerequisites/1_account.html</guid>
       <description>Workshop에서 사용하고자 하는 AWS 계정은 새로운 IAM 역할을 만들수 있어야 하고 다른 IAM 권한 범위를 지정할 수 있어야 합니다.
  이미 AWS 계정을 가지고 있고, IAM 관리자 접속 권한이 있다면 이 페이지를 넘어가도 좋습니다.
   관리자 접속 권한 계정이 없다면: 새로 하나 만듭시다.
@@ -56,10 +56,10 @@ AWS AppSync를 사용하여 API를 구현하고, 데이터 기반 어플리케�
     
     <item>
       <title>Cloud9 Workspace 생성하기</title>
-      <link>https://awskrug.github.io/amplify-photo-gallery-workshop/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/10_workspace.html</link>
+      <link>https://awskrug.github.io/amplify-photo-gallery-workshop/10_prerequisites/10_workspace.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/10_workspace.html</guid>
+      <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/10_prerequisites/10_workspace.html</guid>
       <description>AWS Cloud9은 cloud-based의 통합 개발 환경(IDE)입니다. 브라우저에서 바로 코드를 작성하고 실행시키고, 디버깅할수 있습니다. Cloud9은 코드 편집기, 디버거와 터미널을 제공합니다. 또한 Javascript, Python, PHP 등의 인기 있는 프로그래밍언어를 위한 필수적인 도구들이 미리 패키징 되어 제공됩니다. 무엇보다도 새로운 프로젝트 시작을 위해 설치 파일이 필요하거나, 개발 환경 설정이 필요하지 않습니다.
 The Cloud9의 작업영역은 AWS root 계정이 아닌, Administrator 권한을 가진 IAM user에 의해서 작성 되어야 합니다. root 계정이 아닌 IAM User로 로그인 하여 작업 중인게 맞는지 꼭 확인하세요.</description>
     </item>
@@ -187,10 +187,10 @@ DynamoDB 쿼리로 검색하는 방법도 가능하지만, Amazon Elasticsearch 
     
     <item>
       <title>설치 &amp; 설정</title>
-      <link>https://awskrug.github.io/amplify-photo-gallery-workshop/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/20_software.html</link>
+      <link>https://awskrug.github.io/amplify-photo-gallery-workshop/10_prerequisites/20_software.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/10_%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84/20_software.html</guid>
+      <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/10_prerequisites/20_software.html</guid>
       <description>코딩을 시작하기 전에, Cloud9 환경에 몇 가지 설치, 업데이트, 설정을 해야합니다.
 설치와 업데이트 Cloud9 터미널에서 다음 명령어를 수행하세요. 우리가 사용할 몇 가지 소프트웨어를 설치하고 업데이트 합니다.
 # Update the AWS CLI pip install --user --upgrade awscli # Install and use Node.js v8.10 (to match AWS Lambda) nvm install v8.10.0 nvm alias default v8.10.0 # Install the AWS Amplify CLI npm install -g @aws-amplify/cli 이 명령어들은 완료 되는데 시간이 좀 걸릴수 있습니다.</description>
