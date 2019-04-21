@@ -41,7 +41,7 @@ The Cloud9의 작업영역은 AWS root 계정이 아닌, Administrator 권한�
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/10_prerequisites/20_software.html</guid>
       <description>코딩을 시작하기 전에, Cloud9 환경에 몇 가지 설치, 업데이트, 설정을 해야합니다.
 설치와 업데이트 Cloud9 터미널에서 다음 명령어를 수행하세요. 우리가 사용할 몇 가지 소프트웨어를 설치하고 업데이트 합니다.
-# Update the AWS CLI pip install --user --upgrade awscli # Install and use Node.js v8.10 (to match AWS Lambda) nvm install v8.10.0 nvm alias default v8.10.0 # Install the AWS Amplify CLI npm install -g @aws-amplify/cli 이 명령어들은 완료 되는데 시간이 좀 걸릴수 있습니다.</description>
+# Update the AWS CLI pip install --user --upgrade awscli # Install and use Node.js v8.10 (to match AWS Lambda) nvm install v8.11.0 nvm alias default v8.11.0 # Install the AWS Amplify CLI npm install -g @aws-amplify/cli 이 명령어들은 완료 되는데 시간이 좀 걸릴수 있습니다.</description>
     </item>
     
   </channel>
