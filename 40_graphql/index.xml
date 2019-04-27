@@ -28,11 +28,11 @@ AWS AppSync를 사용하여 API를 구현하고, 데이터 기반 어플리케�
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/40_graphql/20_trying_out_queries.html</guid>
       <description>AWS Console로 접근하여 photoalbums API를 클릭합니다. 이제 API를 파고들어봅시다.
+ Link to AWS AppSync web console in Seoul
  Link to AWS AppSync web console in Northern Virgina
  Link to AWS AppSync web console in Ireland
   왼쪽 사이드바에 있는 Queries를 클릭합니다.
-AWS AppSync의 대화형 쿼리 실행 영역인 이곳에서 쿼리를 작성하거나 변경하고, 쿼리를 실행하여 결과를 볼 수 있습니다. 이는 Resolver들이 우리가 예상한 대로 잘 작동하는지 테스트하기 위한 좋은 방법입니다.
- AppSync 인증 쿼리를 실행하기 전에 사용자 인증이 필요합니다.</description>
+AWS AppSync의 대화형 쿼리 실행 영역인 이곳에서 쿼리를 작성하거나 변경하고, 쿼리를 실행하여 결과를 볼 수 있습니다. 이는 Resolver들이 우리가 예상한 대로 잘 작동하는지 테스트하기 위한 좋은 방법입니다.</description>
     </item>
     
   </channel>

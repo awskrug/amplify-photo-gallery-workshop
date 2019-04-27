@@ -27,7 +27,7 @@ AWS Amplify CLI는 리엑트와 리엑트 네이티브용 iOS와 안드로이드
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/30_adding_auth/20_adding_auth_front.html</guid>
       <description>이제 등록과 로그인을 관리하는 백엔드가 구성되었으니 withAuthenticator AWS Amplify의 상위 리액트 컴포넌트를 이용해서 기존 App 컴포넌트를 감싸도록 합니다. 그러면 앱에서 사용자 등록, 확인, 로그인, 로그 아웃, 비밀번호 재설정을 할 수 있는 간단한 UI를 제공합니다.
-Amplify NPM 종속성 추가 아직 aws-amplify, aws-amplify-react 모듈을 앱에 추가하지 않았으니 이제 추가합니다.
+Amplify npm 라이브러리 추가 아직 aws-amplify, aws-amplify-react 모듈을 앱에 추가하지 않았으니 이제 추가합니다.
  npm install --save aws-amplify aws-amplify-react을 실행합니다.
  src/App.js 내용을 다음으로 교체합니다. // src/App.js  import React, { Component } from &amp;#39;react&amp;#39;; import { Header } from &amp;#39;semantic-ui-react&amp;#39;; import Amplify from &amp;#39;aws-amplify&amp;#39;; import aws_exports from &amp;#39;.</description>
     </item>
