@@ -17,7 +17,7 @@
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/50_working_with_albums/5_managing_albums.html</guid>
       <description>우리가 만든 웹어플리케이션은 사용자를 인증하는 기능과 안전하게 앨범 데이터를 만들고 조회하는 GraphQL API 엔드포인트가 있습니다. 이 두가지 기능을 연결해보겠습니다!
-AWS Amplify는 웹 또는 React Native 앱에 여러 클라우드 서비스를 쉽게 연동해주는 오픈소스 JavaScript라이브러리 입니다. 이제 Connect React 컴포넌트를 사용하여 리액트 컴포넌트가 렌더링 될 때 필요한 데이터를 자동으로 조회해 오도록 GraphQL API로 쿼리를 수행해봅시다.  Amplify CLI는 이미 src/aws-exports.js 에 포함된 모든 설정값을 읽어들였기 때문에 AppSync API와 통신하기 위한 설정 값을 알고 있습니다(Amplify JS 라이브러리에 전달할 설정값이 무엇인지 고민하지 않아도 됩니다).</description>
+AWS Amplify는 웹 또는 React Native 어플리케이션에 여러 클라우드 서비스를 쉽게 연동해주는 오픈소스 JavaScript라이브러리 입니다. 이제 Connect React 컴포넌트를 사용하여 리액트 컴포넌트가 렌더링 될 때 필요한 데이터를 자동으로 조회해 오도록 GraphQL API로 쿼리를 수행해봅시다.  Amplify CLI는 이미 src/aws-exports.js 에 포함된 모든 설정값을 읽어들였기 때문에 AppSync API와 통신하기 위한 설정 값을 알고 있습니다(Amplify JS 라이브러리에 전달할 설정값이 무엇인지 고민하지 않아도 됩니다).</description>
     </item>
     
   </channel>

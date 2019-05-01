@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/20_getting_started/10_what_we_will_build.html</guid>
-      <description>목표 이 워크샵에서 다음을 포함한 몇 가지 기능이 있는 앱을 빌드합니다.
+      <description>목표 이 워크샵에서 다음을 포함한 몇 가지 기능이 있는 어플리케이션을 빌드합니다.
  사용자 등록 및 인증을 하게하여 누가 어떤 사진 앨범의 소유자인지 알 수 있습니다.
  API 서버를 구현해서 사용자가 소유한 앨범과 사진들을 로딩하여 보여줄 수 있습니다.
  누가 무엇을 볼 수 있는가에 대한 권한 정보, 앨범 정보, 사진 정보를 저장하기 때문에 API는 데이터를 빠르게 조회하고 저장하는 신뢰성있는 저장소를 갖습니다.
@@ -24,13 +24,13 @@
     </item>
     
     <item>
-      <title>앱 부트스트래핑</title>
+      <title>어플리케이션 부트스트래핑</title>
       <link>https://awskrug.github.io/amplify-photo-gallery-workshop/20_getting_started/20_bootstrapping_the_app.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/20_getting_started/20_bootstrapping_the_app.html</guid>
-      <description>리액트(React) 앱 만들기 create-react-app CLI로 새로운 리액트 웹 앱을 제작하며 시작하겠습니다.
-이는 로컬에서 자동으로 다시 서버를 띄워주는 리액트 샘플 앱과 브라우저에서 async/await 문법, 화살표 함수 등을 지원하도록 트랜스 컴파일 기능을 제공합니다.
+      <description>리액트(React) 어플리케이션 만들기 create-react-app CLI로 새로운 리액트 웹 어플리케이션을 제작하며 시작하겠습니다.
+이는 로컬에서 자동으로 다시 서버를 띄워주는 리액트 샘플 어플리케이션과 브라우저에서 async/await 문법, 화살표 함수 등을 지원하도록 트랜스 컴파일 기능을 제공합니다.
  create-react-app은 https://github.com/facebook/create-react-app에서 좀 더 배울 수 있습니다.
  Cloud9 터미널에서 npx create-react-app photo-albums를 실행하시고 새로 생성된 디렉토리로 이동합니다 cd photo-albums
  이 명령어를 통해 photo-albums라는 이름을 가진 amplify 앱의 기본 구조를 생성합니다.

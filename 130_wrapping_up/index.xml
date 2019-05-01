@@ -16,15 +16,14 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/130_wrapping_up/10_what_we_built.html</guid>
-      <description>실제로 상용할 어플리케이션을 만들진 않았지만, 간단하게 공유가능한 앨범 웹 앱을 만들어보았습니다.
-우리가 완료한 내용들을 다음 리스트에서 확인해보겠습니다. 우리는 :
- 간단한 리엑트(React) 웹 앱으로 시작했습니다.
- 사용자인증 추가로 완벽한 회원가입 및 로그인을 구현하였습니다.
- DynamoDB 테이블에 적재될 사진 앨범들이 안전하게 관리되도록 AWS AppSync의 GraphQL API를 이용했습니다.
- 앨범추가 및 보기기능을 추가하였습니다.
- 앨범에 사진들을 업로드하고 썸네일 자동생성을 완료하였습니다.
- 사진이 많은 앨범의 &amp;ldquo;더보기&amp;rdquo;와 같이 페이지매김을 도입하였습니다.
- Amazon Rekognition API를 이용한 사진의 자동라벨 감지기능 추가하였습니다.</description>
+      <description>실제로 상용할 어플리케이션을 만들진 않았지만, 간단하게 공유가능한 앨범 웹 어플리케이션을 만들어보았습니다.
+우리가 완료한 내용들을 다음 리스트에서 확인해보겠습니다. :
+ 간단한 리엑트(React) 웹 어플리케이션을 만들었습니다.
+ 사용자 인증 추가로 회원가입 및 로그인을 구현하였습니다.
+ DynamoDB 테이블에 저장될 사진과 앨범들이 안전하게 관리되도록 AWS AppSync의 GraphQL API를 이용했습니다.
+ 앨범 추가 및 상세보기 기능을 추가하였습니다.
+ 앨범에 사진들을 업로드하고 썸네일 자동생성 기능을 구현하였습니다.
+ 사진이 많은 앨범의 &amp;ldquo;더보기&amp;rdquo;와 같이 Pagenation 기능을 도입하였습니다.</description>
     </item>
     
     <item>
@@ -33,10 +32,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/130_wrapping_up/20_cleanup.html</guid>
-      <description>Amplify로 삭제하기 Amplify는 우리가 이번 워크샵에서 프로비저닝했던 모든 리소스들을 삭제할 수 있는 작업을 할 수 있습니다 (프로비저닝된 CloudFormation 중첩스택을 삭제하는 작업을 시도합니다). 그러나 몇가지 리소스들은 삭제거부가 되므로, 수동으로 삭제해줍니다.
+      <description>Amplify로 삭제하기 Amplify는 우리가 이번 워크샵에서 프로비저닝했던 모든 리소스들을 삭제하는 작업을 할 수 있습니다 (프로비저닝된 CloudFormation 중첩스택을 삭제하는 작업을 시도합니다). 그러나 몇가지 리소스들은 수동으로 삭제해줘야 합니다. (삭제 거부)
  photo-albums 디렉토리에서 amplify delete를 실행하고 삭제를 확인하기 위해 Enter 키를 누릅니다.
  Amplify가 리소스들을 삭제하는 동안 기다립니다.
-  수동으로 일부 삭제하기 이제 CloudFormation stacks console로 이동해서 &amp;lsquo;DELETE FAILED&amp;rsquo;상태표시를 나타내는 몇개의 스택들을 클릭합니다. 귀하께서는 삭제실패된 원인과 무엇이 실패되었는지를 보실 수 있습니다.</description>
+  삭제 작업이 실패한 일부 리소스를 수동으로 삭제하기 이제 CloudFormation stacks console로 이동해서 &amp;lsquo;DELETE FAILED&amp;rsquo;상태표시를 나타내는 몇개의 스택들을 클릭합니다. 삭제 실패된 원인과 무엇이 실패되었는지를 보실 수 있습니다.</description>
     </item>
     
   </channel>

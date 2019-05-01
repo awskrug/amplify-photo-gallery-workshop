@@ -17,7 +17,7 @@
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/60_managing_photos/30_adding_storage.html</guid>
       <description>앨범에 업로드한 모든 사진들을 보관할 저장소가 필요합니다. Amazon Simple Storage Service (S3)는 이를 위한 좋은 서비스이기도 하고 Amplify의 스토리지 모듈을 이용하면 S3에 대한 설정과 작업이 아주 쉽습니다.
-스토리지 구성 및 추가 먼저 Amplify CLI를 사용하여 스토리지를 활성화합니다. Amazon S3에 버킷이 생성되고 적절한 권한으로 설정되어 앱에 로그인 한 사용자가 읽고 쓸 수 있습니다. 또한 앨범을 공개 하는 경우 인증되지 않은 게스트 사용자가 버킷을 읽을 수 있도록 허용합니다.
+스토리지 구성 및 추가 먼저 Amplify CLI를 사용하여 스토리지를 활성화합니다. Amazon S3에 버킷이 생성되고 적절한 권한으로 설정되어 어플리케이션에 로그인 한 사용자가 읽고 쓸 수 있습니다. 또한 앨범을 공개 하는 경우 인증되지 않은 게스트 사용자가 버킷을 읽을 수 있도록 허용합니다.
 Configuring and adding storage  사진앨범 디렉토리에서 다음 명령어를 수행합니다.</description>
     </item>
     
