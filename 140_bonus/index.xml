@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/140_bonus/10_lightbox_photos.html</guid>
-      <description>아직 우리는 유저가 어플리케이션에서 썸네일을 클릭하여 더 큰 사진을 볼 수 있도록 하는 기능을 다루지 않았습니다. 이미 우리는 API로부터 전체 크기와 썸네일 크기의 데이터 모두를 가지고 올 수 있기 때문에, 프런트엔드 어플리케이션에 몇줄 정도 코드를 추가하는 것 만으로도 이 기능을 제공할 수 있습니다.
+      <description>아직 우리는 유저가 어플리케이션에서 썸네일을 클릭하여 더 큰 사진을 볼 수 있도록 하는 기능을 다루지 않았습니다. 이미 우리는 API로부터 전체 크기와 썸네일 크기의 데이터를 모두 가지고 올 수 있기 때문에, 프런트엔드 어플리케이션에 몇줄 정도 코드를 추가하는 것 만으로도 이 기능을 제공할 수 있습니다.
 프런트엔드 수정하기 아래의 수정된 버전으로 photo-albums/src/App.js를 대체 해 주세요: // photo-albums/src/App.js  import React, { Component } from &amp;#39;react&amp;#39;; import {BrowserRouter as Router, Route, NavLink} from &amp;#39;react-router-dom&amp;#39;; import { Container, Divider, Form, Grid, Header, Input, List, Modal, Segment } from &amp;#39;semantic-ui-react&amp;#39;; import {v4 as uuid} from &amp;#39;uuid&amp;#39;; import { Connect, S3Image, withAuthenticator } from &amp;#39;aws-amplify-react&amp;#39;; import Amplify, { API, graphqlOperation, Storage } from &amp;#39;aws-amplify&amp;#39;; import aws_exports from &amp;#39;.</description>
     </item>
     
