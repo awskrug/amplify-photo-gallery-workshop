@@ -17,24 +17,24 @@
     <title>Cloud9 Workspace 생성하기 :: Amplify / AppSync / React Workshop</title>
 
     
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/nucleus.css?1556678452" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/nucleus.css?1556681978" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/hybrid.css?1556678452" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/featherlight.min.css?1556678452" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/perfect-scrollbar.min.css?1556678452" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/auto-complete.css?1556678452" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/theme.css?1556678452" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/hugo-theme.css?1556678452" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/hybrid.css?1556681978" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/featherlight.min.css?1556681978" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/perfect-scrollbar.min.css?1556681978" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/auto-complete.css?1556681978" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/theme.css?1556681978" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/hugo-theme.css?1556681978" rel="stylesheet">
     
-      <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/theme-mine.css?1556678452" rel="stylesheet">
+      <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/theme-mine.css?1556681978" rel="stylesheet">
     
 
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.min.css?1556678452" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.structure.min.css?1556678452" rel="stylesheet">
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.theme.min.css?1556678452" rel="stylesheet">
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery-2.x.min.js?1556678452"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery-ui.min.js?1556678452"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/tabs.js?1556678452"></script>
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.min.css?1556681978" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.structure.min.css?1556681978" rel="stylesheet">
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/css/jquery-ui.theme.min.css?1556681978" rel="stylesheet">
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery-2.x.min.js?1556681978"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery-ui.min.js?1556681978"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/tabs.js?1556681978"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/lunr.min.js?1556678452"></script>
-<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/auto-complete.js?1556678452"></script>
+<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/lunr.min.js?1556681978"></script>
+<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/auto-complete.js?1556681978"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/search.js?1556678452"></script>
+<script type="text/javascript" src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/search.js?1556681978"></script>
 
     
   </div>
@@ -975,17 +975,18 @@ Cloud9은 코드 편집기, 디버거와 터미널을 제공합니다. 또한 Ja
 <h3 id="새-환경-만들기">새 환경 만들기</h3>
 
 <ol>
+<li>이 실습은 버지니아 리전(us-east-1)에서 실행됩니다.</li>
 <li><a href="https://us-east-1.console.aws.amazon.com/cloud9/home?region=us-east-1" target="_blank">Cloud9 web console</a> 로 이동</li>
 <li><strong>Create environment</strong> 선택</li>
 <li><strong>workshop</strong>으로 이름을 붙이고 <strong>Next step</strong>으로 넘어가세요.</li>
-<li><strong>Create a new instance for environment (EC2)</strong> 선택하고 <strong>t2.medium</strong>을 고르세요</li>
+<li><strong>Create a new instance for environment (EC2)</strong> 선택하고 <strong>t2.micro</strong>를 고르세요</li>
 <li>모든 환경 설정을 있는 그대로 두고 <strong>Next step</strong>로 이동합니다.</li>
 <li><strong>Create environment</strong>를 클릭합니다.</li>
 </ol>
 
 <h3 id="layout-정리">Layout 정리</h3>
 
-<p>작업 환경이 나타나면, 레이아웃을 본인에게 맞게 커스터마이징 합니다.  1) <strong>welcome tab</strong>을 닫고 2) <strong>아래 작업 영역도 닫습니다.</strong>, 3)새로운 <strong>terminal</strong> 탭을 메인 작업 영역에 띄웁니다.  :
+<p>작업 환경이 나타나면, 레이아웃을 본인에게 맞게 커스터마이징 합니다.  1) <strong>welcome tab</strong>을 닫고 2) <strong>아래 작업 영역도 닫습니다.</strong> 3)새로운 <strong>terminal</strong> 탭을 메인 작업 영역에 띄웁니다.  :
 <img src="https://awskrug.github.io/amplify-photo-gallery-workshop/images/c9before.png" alt="c9before" /></p>
 
 <p>당신의 작업 영역은 이제 이렇게 보일거에요.:
@@ -1579,20 +1580,20 @@ Cloud9은 코드 편집기, 디버거와 터미널을 제공합니다. 또한 Ja
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/clipboard.min.js?1556678452"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/perfect-scrollbar.min.js?1556678452"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/perfect-scrollbar.jquery.min.js?1556678452"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery.sticky.js?1556678452"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/featherlight.min.js?1556678452"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/html5shiv-printshiv.min.js?1556678452"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/highlight.pack.js?1556678452"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/clipboard.min.js?1556681978"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/perfect-scrollbar.min.js?1556681978"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/perfect-scrollbar.jquery.min.js?1556681978"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/jquery.sticky.js?1556681978"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/featherlight.min.js?1556681978"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/html5shiv-printshiv.min.js?1556681978"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/highlight.pack.js?1556681978"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/modernizr.custom.71422.js?1556678452"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/learn.js?1556678452"></script>
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/hugo-learn.js?1556678452"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/modernizr.custom.71422.js?1556681978"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/learn.js?1556681978"></script>
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/js/hugo-learn.js?1556681978"></script>
 
-    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/mermaid/mermaid.css?1556678452" type="text/css" rel="stylesheet" />
-    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/mermaid/mermaid.js?1556678452"></script>
+    <link href="https://awskrug.github.io/amplify-photo-gallery-workshop/mermaid/mermaid.css?1556681978" type="text/css" rel="stylesheet" />
+    <script src="https://awskrug.github.io/amplify-photo-gallery-workshop/mermaid/mermaid.js?1556681978"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
