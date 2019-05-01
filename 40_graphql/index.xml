@@ -27,7 +27,7 @@ AWS AppSync를 사용하여 API를 구현하고, 데이터 기반 어플리케�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/40_graphql/20_trying_out_queries.html</guid>
-      <description>AWS Console로 접근하여 photoalbums API를 클릭합니다. 이제 API를 파고들어봅시다.
+      <description>AWS Console에서 AppSync로 이동후에 photoalbums-master API를 클릭합니다. 이제 API를 파고들어봅시다.
  Link to AWS AppSync web console in Seoul
  Link to AWS AppSync web console in Northern Virgina
  Link to AWS AppSync web console in Ireland
