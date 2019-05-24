@@ -39,7 +39,7 @@ DynamoDB 쿼리로 검색하는 방법도 가능하지만, Amazon Elasticsearch 
       <guid>https://awskrug.github.io/amplify-photo-gallery-workshop/110_ai/40_searching_for_labels.html</guid>
       <description>백엔드 작업이 완료되었으니 이제 사진을 레이블로 검색할 수 있게 하겠습니다.
 새 Search 컴포넌트를 생성하고 App 컴포넌트에 루트 경로로 표시되도록 추가합니다. Search 컴포넌트에서 검색된 모든 사진을 표시하기위해 이미 생성한 PhotoList 컴포넌트를 재사용합니다.
-photo-albums/src/App.js을 다음 내용으로 변경합니다. // photo-albums/src/App.js  import React, { Component } from &amp;#39;react&amp;#39;; import {BrowserRouter as Router, Route, NavLink} from &amp;#39;react-router-dom&amp;#39;; import { Divider, Form, Grid, Header, Input, List, Segment } from &amp;#39;semantic-ui-react&amp;#39;; import {v4 as uuid} from &amp;#39;uuid&amp;#39;; import { Connect, S3Image, withAuthenticator } from &amp;#39;aws-amplify-react&amp;#39;; import Amplify, { API, graphqlOperation, Storage } from &amp;#39;aws-amplify&amp;#39;; import aws_exports from &amp;#39;.</description>
+photo-albums/src/App.js을 다음 내용으로 변경합니다. // photo-albums/src/App.js  import React, { Component } from &amp;#39;react&amp;#39;; import {BrowserRouter as Router, Route, NavLink} from &amp;#39;react-router-dom&amp;#39;; import { Divider, Form, Grid, Header, Input, List, Segment } from &amp;#39;semantic-ui-react&amp;#39;; import {v4 as uuid} from &amp;#39;uuid&amp;#39;; import { Connect, S3Image, withAuthenticator } from &amp;#39;aws-amplify-react&amp;#39;; import Amplify, { API, graphqlOperation, Storage, Auth } from &amp;#39;aws-amplify&amp;#39;; import aws_exports from &amp;#39;.</description>
     </item>
     
   </channel>
